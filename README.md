@@ -1,0 +1,2 @@
+# Tamagotchi-pet
+"living" pet!
