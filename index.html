@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background"> </div>
+    <div class="container">
+
+        <div class="header"> 
+            <h1>Welcome to Tamagotchi World!</h1>
+            <h3>Your very own virtual pet adventure awaits! </h3>
+            <a href="https://sumayasaidselma.github.io/html-portfolio/public/about.html">About Me</a>
+            <p>Enter your Tamagotchi's name below and click "Submit" to get started. Then, scroll down to begin the game.</p>
+
+            <div class="name">
+                <label for="pet-name">Enter your pet's name:</label>
+                <input type="text" id="pet-name">
+<br>
+                <button onclick="submitName()">Submit</button>
+            </div>
+        </div>
+<br>
+<br>
+        <div class="body">
+
+            <div class="pet" id="pet">
+                <img src="pictures/minion-happy-saying-hi-.png" alt="pet" id="pet-img">
+            </div>
+
+            <div class="metrics">
+                <h2>Metrics</h2>
+                <p>Hunger: <span id="hunger">5</span></p>
+                <p>Sleepiness: <span id="sleepiness">5</span></p>
+                <p>Boredom: <span id="boredom">5</span></p>
+                <p>Age: <span id="age">0</span></p>
+            </div>
+            <div class="actions">
+                <button onclick="feed()">Feed</button>
+                <button onclick="turnOffLights()">Turn Off Lights</button>
+                <button onclick="play()">Play</button>
+            </div>
+        </div>
+
+    </div>
+<br>
+<br>
+<br>
+
+    <script src="script.js"></script>
+</body>
+</html>
