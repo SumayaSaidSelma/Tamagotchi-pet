@@ -6,7 +6,6 @@ body {
     color: white;
 }
 
-
 .background {
     position: fixed;
     top: 0;
@@ -16,9 +15,8 @@ body {
     background-image: url('pictures/gjwF3CaJSee2Hr3LUodYyJ-1200-80.jpg'); 
     background-size: cover;
     z-index: -1;
-    animation: moveBackground 40s linear infinite; 
+    animation: moveBackground 30s linear infinite; 
 }
-
 
 @keyframes moveBackground {
     from {
@@ -29,30 +27,78 @@ body {
     }
 }
 
-
 .container {
     margin-top: 50px;
     position: relative; 
 }
 
-.title {
-    color: #4CAF50;
+
+.header h1 {
+    color: #0df214;
 }
 
-.pet {
-    margin-top: 20px;
+.header h3 {
+    color: rgb(243, 249, 244);
+    background-color:rgba(29, 29, 29, 0.5);
+    margin: 15px 280px;
+    border-radius: 5px;
 }
 
-.metrics {
-    margin-top: 20px;
+.header a {
+    color: white;
+    background-color:#4CAF50;
+    margin: 10px 250px;
+    border-radius: 5px;
+    padding: 5px;
 }
 
-.actions {
-    margin-top: 20px;
+.header p {
+    color: white;
+    background-color:rgba(29, 29, 29, 0.5);
+    margin: 10px 100px;
+    border-radius: 5px;
 }
 
 .name {
     margin-top: 20px;
+    background-color:rgba(29, 29, 29, 0.5);
+    margin: 2px 250px;
+    border-radius: 5px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.game {
+    margin-top: 20px;
+    position: relative; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.pet {
+    padding: 10px;
+    margin-bottom: 20px;
+
+}
+
+.metrics {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin: 10px 40px;
+    width: 80%;
+    height: 60%;
+}
+
+
+.actions {
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 button {
@@ -61,7 +107,7 @@ button {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    margin: 5px;
+    margin: 10px;
     border-radius: 5px;
 }
 
@@ -69,12 +115,8 @@ button:hover {
     background-color: #45a049;
 }
 
-#pet {
-    position: relative;
-}
-
 #pet-img {
-    width: 100px;
+    width: 400px;
     height: auto;
     transition: transform 0.5s ease;
 }

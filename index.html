@@ -3,33 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tamagotchi Mini Project</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="background"> </div>
     <div class="container">
 
         <div class="header"> 
-            <h1>Welcome to Tamagotchi World!</h1>
-            <h3>Your very own virtual pet adventure awaits! </h3>
-            <a href="https://sumayasaidselma.github.io/html-portfolio/public/about.html">About Me</a>
+            <h1 id="welcome">Welcome to Tamagotchi World!</h1>
+            <h3>Your very own virtual pet adventure awaits! </h3> 
+            <a href="https://sumayasaidselma.github.io/html-portfolio/public/about.html">  About Me  </a>
             <p>Enter your Tamagotchi's name below and click "Submit" to get started. Then, scroll down to begin the game.</p>
 
             <div class="name">
                 <label for="pet-name">Enter your pet's name:</label>
                 <input type="text" id="pet-name">
-<br>
                 <button onclick="submitName()">Submit</button>
             </div>
         </div>
 <br>
 <br>
-        <div class="body">
-
-            <div class="pet" id="pet">
-                <img src="pictures/minion-happy-saying-hi-.png" alt="pet" id="pet-img">
-            </div>
+        <div class="game">
 
             <div class="metrics">
                 <h2>Metrics</h2>
@@ -38,14 +34,22 @@
                 <p>Boredom: <span id="boredom">5</span></p>
                 <p>Age: <span id="age">0</span></p>
             </div>
+
+            <div class="pet" id="pet">
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmc5bGVlZDNrdDJpOWR2czNiZzR1dHp3OHAzczZudnl3MGMxMm9jaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/WLohQRn2Iqp9WOBPT2/giphy.gif" alt="pet" id="pet-img">
+            </div>
+        </div>
+
             <div class="actions">
                 <button onclick="feed()">Feed</button>
                 <button onclick="turnOffLights()">Turn Off Lights</button>
                 <button onclick="play()">Play</button>
+                <button onclick="sleep()">Sleep</button>
             </div>
-        </div>
 
     </div>
+
+
 <br>
 <br>
 <br>
