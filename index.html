@@ -13,7 +13,7 @@
 
         <div class="header"> 
             <h1 id="welcome">Welcome to Tamagotchi World!</h1>
-            <h3>Your very own virtual pet adventure awaits! </h3> 
+            <h3>Your very own virtual pet adventure strat her! </h3> 
             <a href="https://sumayasaidselma.github.io/html-portfolio/public/about.html">  About Me  </a>
             <p>Enter your Tamagotchi's name below and click "Submit" to get started. Then, scroll down to begin the game.</p>
 
@@ -29,7 +29,7 @@
 
             <div class="metrics">
                 <h2>Metrics</h2>
-                <p>Hunger: <span id="hunger">5</span></p>
+                <p>Hunger: <span id="hunger">0</span></p>
                 <p>Sleepiness: <span id="sleepiness">5</span></p>
                 <p>Boredom: <span id="boredom">5</span></p>
                 <p>Age: <span id="age">0</span></p>
@@ -41,10 +41,18 @@
         </div>
 
             <div class="actions">
-                <button onclick="feed()">Feed</button>
-                <button onclick="turnOffLights()">Turn Off Lights</button>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="feed()">Feed</button>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="feedPet('apple')">Apple</a>
+                        <a href="#" onclick="feedPet('banana')">Banana</a>
+                        <a href="#" onclick="feedPet('carrot')">Carrot</a>
+                    </div>
+                </div>
                 <button onclick="play()">Play</button>
                 <button onclick="sleep()">Sleep</button>
+                <button onclick="resetGame()">Reset Game</button>
+            </div>
             </div>
 
     </div>
