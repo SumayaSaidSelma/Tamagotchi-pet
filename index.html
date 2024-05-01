@@ -9,6 +9,7 @@
 
 <body>
     <div class="background"> </div>
+
     <div class="container">
 
         <div class="header"> 
@@ -18,20 +19,21 @@
             <p>Enter your Tamagotchi's name below and click "Submit" to get started. Then, scroll down to begin the game.</p>
 
             <div class="name">
-                <label for="pet-name">Enter your pet's name:</label>
-                <input type="text" id="pet-name">
+                <label for="name">Enter your pet's name:</label>
+                <input type="text" id="name">
                 <button onclick="submitName()">Submit</button>
             </div>
         </div>
 <br>
 <br>
+
         <div class="game">
 
             <div class="metrics">
                 <h2>Metrics</h2>
-                <p>Hunger: <span id="hunger">0</span></p>
-                <p>Sleepiness: <span id="sleepiness">5</span></p>
-                <p>Boredom: <span id="boredom">5</span></p>
+                <p>Eat: <span id="eat">0</span></p>
+                <p>Sleep: <span id="sleep">3</span></p>
+                <p>Play: <span id="play">2</span></p>
                 <p>Age: <span id="age">0</span></p>
             </div>
 
@@ -42,11 +44,11 @@
 
             <div class="actions">
                 <div class="dropdown">
-                    <button class="dropbtn" onclick="feed()">Feed</button>
+                    <button class="dropbtn" onclick="eat()">Feed</button>
                     <div class="dropdown-content">
-                        <a href="#" onclick="feedPet('apple')">Apple</a>
-                        <a href="#" onclick="feedPet('banana')">Banana</a>
-                        <a href="#" onclick="feedPet('carrot')">Carrot</a>
+                        <a href="#" onclick="eatPet('apple')">Apple</a>
+                        <a href="#" onclick="eatPet('banana')">Banana</a>
+                        <a href="#" onclick="eatPet('carrot')">Carrot</a>
                     </div>
                 </div>
                 <button onclick="play()">Play</button>
